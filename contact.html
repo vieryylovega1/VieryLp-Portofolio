@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Viery Lovega Pratama</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo-viery.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" href="assets/img/logo-viery.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="bg-gradient"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <div class="container">
+
+    <!-- NAVBAR -->
+    <div id="navbar-placeholder"></div>
+
+    <section>
+      <h2 class="section-title reveal">Contact Me</h2>
+      <p class="section-subtitle reveal">
+        Jika perusahaan membutuhkan kandidat IT Security / SOC Analyst yang siap kerja,
+        silakan hubungi saya melalui kontak berikut.
+      </p>
+
+      <div class="grid reveal">
+        <div class="card">
+          <h4>Email</h4>
+          <p><a href="mailto:vierylovegaa@gmail.com">vierylovegaa@gmail.com</a></p>
+          <span class="mini-tag">Fast Response</span>
+        </div>
+
+        <div class="card">
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/6281234905841" target="_blank">+62 812-3490-5841</a></p>
+          <span class="mini-tag">Chat Now</span>
+        </div>
+
+        <div class="card">
+          <h4>LinkedIn</h4>
+          <p><a href="https://linkedin.com/in/viery-lovega-65450127a/" target="_blank">linkedin.com/in/viery-lovega</a></p>
+          <span class="mini-tag">Professional Profile</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+  <h2 class="section-title reveal">Recruiter Message Templates</h2>
+  <p class="section-subtitle reveal">
+    Berikut beberapa template pesan profesional yang bisa digunakan untuk menghubungi recruiter melalui
+    Email, LinkedIn, maupun WhatsApp.
+  </p>
+
+  <div class="recruiter-input-box reveal">
+  <label for="recruiterName">Recruiter Name (Optional)</label>
+  <input type="text" id="recruiterName" placeholder="Example: Mr. John / Kak Sarah" />
+  <p class="hint-text">
+    Nama recruiter akan otomatis mengganti teks <b>[Recruiter Name]</b> di semua template.
+  </p>
+</div>
+
+  <div class="message-grid reveal">
+
+    <!-- EMAIL TEMPLATE -->
+    <div class="message-card">
+      <h4>📧 Email Template</h4>
+      <p class="message-desc">Cocok untuk melamar resmi melalui email perusahaan.</p>
+
+      <textarea readonly class="template-box" id="msgEmail">
+Subject: Application for IT Security / SOC Analyst Position
+
+Hello Hiring Manager,
+
+My name is Viery Lovega Pratama. I am interested in the IT Security / SOC Analyst position at your company.
+
+I have hands-on experience working in the CISO Division at Bank Jatim, focusing on security monitoring, SIEM log analysis, endpoint protection (Cyberreason, CrowdStrike, Kaspersky), and WAF monitoring (F5).
+
+I would be grateful for the opportunity to discuss how my skills and experience can contribute to your security team.
+
+Thank you for your time and consideration.
+
+Best regards,
+Viery Lovega Pratama
+Phone: +62 812-3490-5841
+Email: vierylovegaa@gmail.com
+LinkedIn: linkedin.com/in/viery-lovega-65450127a/
+      </textarea>
+
+      <button class="btn btn-primary full-btn" onclick="copyMessage('msgEmail')">
+        Copy Email Template
+      </button>
+    </div>
+
+    <!-- LINKEDIN TEMPLATE -->
+    <div class="message-card">
+      <h4>💼 LinkedIn Template</h4>
+      <p class="message-desc">Singkat dan profesional untuk recruiter LinkedIn.</p>
+
+      <textarea readonly class="template-box" id="msgLinkedin">
+Hello [Recruiter Name],
+
+I hope you are doing well. My name is Viery Lovega Pratama, an IT Security professional with experience in SIEM monitoring, endpoint protection (EDR/AV), and WAF monitoring at Bank Jatim (CISO Division).
+
+I am currently looking for opportunities as an IT Security / SOC Analyst. I would be happy to connect and discuss if there are any open positions that match my background.
+
+Thank you,
+Viery Lovega Pratama
+      </textarea>
+
+      <button class="btn btn-primary full-btn" onclick="copyMessage('msgLinkedin')">
+        Copy LinkedIn Template
+      </button>
+    </div>
+
+    <!-- WHATSAPP TEMPLATE -->
+    <div class="message-card">
+      <h4>📱 WhatsApp Template</h4>
+      <p class="message-desc">Untuk chat cepat dan tetap terlihat profesional.</p>
+
+      <textarea readonly class="template-box" id="msgWhatsapp">
+Halo [Nama Recruiter],
+
+Perkenalkan saya Viery Lovega Pratama. Saya tertarik untuk melamar posisi IT Security / SOC Analyst di perusahaan Anda.
+
+Saya memiliki pengalaman di Divisi CISO Bank Jatim dengan fokus pada security monitoring, SIEM log analysis, endpoint protection (Cyberreason, CrowdStrike, Kaspersky), serta monitoring WAF F5.
+
+Apabila ada kesempatan, saya ingin berdiskusi lebih lanjut terkait lowongan yang tersedia.
+Terima kasih banyak 🙏
+
+Salam,
+Viery Lovega Pratama
+      </textarea>
+
+      <button class="btn btn-primary full-btn" onclick="copyMessage('msgWhatsapp')">
+        Copy WhatsApp Template
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="footer-placeholder"></div>
+
+  </div>
+
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
