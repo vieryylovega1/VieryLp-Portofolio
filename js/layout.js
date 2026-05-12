@@ -35,7 +35,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   await loadPartial("footer-placeholder", "partials/footer.html");
 
   setActiveNav();
+  // init navbar + theme after navbar loaded
+  if (typeof initNavbar === "function") initNavbar();
+  if (typeof initThemeToggle === "function") initThemeToggle();
 
   // FORCE REVEAL CHECK AGAIN AFTER LOADING PARTIALS
   window.dispatchEvent(new Event("scroll"));
 });
+
