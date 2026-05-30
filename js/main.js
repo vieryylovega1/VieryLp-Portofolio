@@ -19,12 +19,14 @@ function initThemeToggle() {
   const themeToggle = document.getElementById("themeToggle");
   if (!themeToggle) return;
 
-  // Load theme from localStorage
+  // DEFAULT = DARK
   const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
+
+  if (!savedTheme || savedTheme === "dark") {
     document.body.classList.add("dark");
     themeToggle.textContent = "☀️";
   } else {
+    document.body.classList.remove("dark");
     themeToggle.textContent = "🌙";
   }
 
@@ -32,11 +34,11 @@ function initThemeToggle() {
     document.body.classList.toggle("dark");
 
     if (document.body.classList.contains("dark")) {
-      themeToggle.textContent = "☀️";
       localStorage.setItem("theme", "dark");
+      themeToggle.textContent = "☀️";
     } else {
-      themeToggle.textContent = "🌙";
       localStorage.setItem("theme", "light");
+      themeToggle.textContent = "🌙";
     }
   });
 }
